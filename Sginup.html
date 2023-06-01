@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/output.css">
+    <title>Document</title>
+</head>
+
+<body id="back" class="w-[100wv] h-[100vh] relative">
+
+    <div class="flex justify-center items-center w-full h-full ">
+        <section class="w-[25rem] h-[35rem] rounded-box shadow-lg bg-success p-4 text-white log-sign">
+            <h3 class=" font-extrabold text-center " style="font-size: 2.5rem;">Sign Up</h3>
+
+            <div class=" mt-8">
+                <label class="text-lg font-semibold">Email :</label>
+                <input id="email" type="email" placeholder="Eamil" required
+                    class="input input-bordered input-primary w-full mt-2 text-black" />
+            </div>
+
+            <div class=" mt-6">
+                <label class="text-lg font-semibold">Password :</label>
+                <input id="password" type="password" placeholder="Password" required
+                    class="input input-bordered input-primary w-full mt-2 text-black" />
+            </div>
+
+            <div class=" mt-6">
+                <label class="text-lg font-semibold">Password Again :</label>
+                <input id="rePassword" type="password" placeholder="Password" required
+                    class="input input-bordered input-primary w-full mt-2 text-black" />
+            </div>
+
+            <a id="sub" href="#" class="btn btn-primary text-xl mt-8 mb-4 w-full">Sign up</a>
+
+            <a  href="./login.html" class="text-black ">Login</a>
+
+        </section>
+    </div>
+
+
+
+
+    <div id="loading" class="w-[100wh] h-[100vh] absolute top-0 left-0 right-0 bottom-0 hidden
+    bg-opacity-50  justify-center items-center bg-black ">
+    
+        <div class="w-[20rem] h-[10rem] bg-base-300 items-center 
+         justify-center rounded-md text-center flex flex-col ">
+            <span class="text-3xl font-extrabold text-info mb-8">Loading...</span>
+            <progress class="progress progress-info  w-56"></progress>
+        </div>
+    </div>
+
+
+    <script type="module" src="assets/scripts/SignUp.js"></script>
+</body>
+
+</html>

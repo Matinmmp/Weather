@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- <html lang="en"  data-theme="business"> -->
+<html lang="en" class="bg-base-300">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="py-1 px-4">
+        <!-- in light mode navbar bg will be bg-info in dark mode will be base 300 -->
+        <nav class="navbar bg-info text-white shadow-md shadow-sky-950 rounded-box">
+            <div class=" w-full flex flex-wrap justify-between ">
+
+                <a id="exit" class="btn btn-ghost normal-case order-1 lg:order-1 text-xl"> Exit</a>
+
+                <div id="searchBox" class=" w-full lg:max-w-[40rem] mt-2 lg:mt-0 order-3 lg:order-2   relative">
+                    <input id="search" type="text" autocomplete="off" placeholder="Search City..."
+                        class="input input-bordered input-info w-full text-info" />
+
+                    <div id="segustionBox" class="segustion-box hidden  z-50">
+                    </div >
+
+                </div>
+
+                <div class="form-control order-2 lg:order-3">
+                    <label class=" label cursor-pointer">
+                        <i id="themeIcon" class="bi bi-brightness-low-fill px-2 text-3xl"></i>
+                        <input id="themeToggle" data-theme="winter" type="checkbox" class="toggle" checked />
+                    </label>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <section class=" px-4 py-12 relative">
+
+        <div class="h-full flex justify-center opacity-70">
+
+            <span id="result" class="text-3xl block">No Result</span>
+
+            <div id="card" class=" hidden card glass max-w-[25rem] w-full h-[75vh] shadow-xl shadow-sky-950 z-10">
+
+                <figure class="w-full h-[50%]">
+                    <img id="cardImage" src="./assets/svgs/animated/cloud.svg" class="w-[80%]  h-full" alt="car!" />
+                </figure>
+
+                <div class="card-body p-4 text-center">
+
+                    <h2 id="cardTemp" class="card-title mx-auto text-3xl">Life hack</h2>
+                    <p id="cardCity" class="text-2xl">How to park your car at your garage?</p>
+                    <p id="cardWeather" class="text-2xl">How to park your car at your garage?</p>
+
+                    <div class=" flex items-center  justify-end  ">
+                        <div  class="w-6/12 text-xl flex items-center justify-center ">
+                            <img src="assets/svgs/icons8_temperature_low_48.png" class="me-2" alt=""> 
+                            <div id="cardFeelsLike"></div>
+                            
+                        </div>
+                        <div class="w-6/12 flex items-center justify-center border-s-2 border-blue-600 text-xl">
+                            <img src="assets/svgs/icons8_dry_32.png" class="me-2"  alt=""> 
+                            <div id="cardHumidity"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <div id="loading" class="w-[100wh] h-[100vh] absolute top-0 left-0 right-0 bottom-0 hidden
+    bg-opacity-50 justify-center items-center bg-black ">
+        <div class="w-[20rem] h-[10rem] bg-base-300 items-center 
+         justify-center rounded-md text-center flex flex-col ">
+            <span class="text-3xl font-extrabold text-info mb-8">Loading...</span>
+            <progress class="progress progress-info  w-56"></progress>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="./assets/scripts/Home.js"></script>
+</body>
+
+</html>

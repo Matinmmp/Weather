@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.segustion-box {
+    @apply absolute top-[100%] left-[50%] transform translate-x-[-50%] bg-info text-black w-full lg:max-w-[40rem];
+}
+
+.segustion-item {
+    @apply p-3 active:scale-[.98] transition-transform ease-in-out duration-100 border-b-2 cursor-pointer;
+}
+
+body{
+    font-family: sans-serif !important;
+}
+
+#back {
+    background-image: url('../svgs/sky-background-video-conferencing_23-2148616500.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.log-sign {
+    background-color: rgba(78, 217, 255, 0.271);
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 40px rgba(0, 127, 166, 0.36), 0 0 40px rgb(0, 160, 209);
+}
